@@ -5,10 +5,6 @@ import (
 )
 
 func main() {
-	aSlice := []int{1, 2, 3, 4, 5}
-  fmt.Println(rotate(aSlice))  
+	s := []int{1, 2, 3, 4, 5}
+	s = append(s[shift:], s[:shift]...)
 }
-  
-  func rotate(s[]int, shift int) {
-    return append(s[shift:], s[:shift]...)
-  }
